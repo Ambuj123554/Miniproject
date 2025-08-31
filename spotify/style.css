@@ -295,13 +295,66 @@ nav-icons img{
 }
 
 
+/* For tablets and mobiles */
 @media (max-width: 700px) {
     .main {
-        padding: 20px 10px;  
+        flex-direction: column;  /* stack sidebar, content, and player vertically */
+        padding: 0;              /* remove big padding */
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .sidebar .nav,
+    .library {
+        flex-direction: row;
+        overflow-x: auto;
     }
 
     .main-content {
-        font-size: 1.2em;   
-        text-align: center; 
+        width: 100%;
+        padding: 10px;
+        font-size: 1em; /* smaller text */
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .music-player {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .album, .player, .control {
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .player-control img {
+        height: 1.5rem; /* shrink icons */
+    }
+
+    .progress-bar, .progress-ba {
+        width: 100%;
     }
 }
