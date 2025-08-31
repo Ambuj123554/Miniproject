@@ -297,10 +297,11 @@ nav-icons img{
 
 @media (max-width: 700px) {
     .main {
-        padding: 100px 0;
+        padding: 20px 10px;  
     }
 
-    .main-content{
-        font-size: 2.5em;
+    .main-content {
+        font-size: 1.2em;   
+        text-align: center; 
     }
 }
