@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.btn-cont{
+    display:flex;
+    justify-content: center;
+}
+.box{
+    height:200px;
+    width:200px;
+    border-radius: 20%;
+    border:10px solid black;
+    margin:2.5rem;
+}
+
+
+.purple{
+    background-color: purple;
+}
+.aqua{
+    background-color: aqua;
+}
+.goldenrod{
+    background-color: goldenrod;
+}
+.palevioletred{
+    background-color: palevioletred;
+}
+.flash{
+    background-color: white;
+}
+
+.flashs{
+    background-color: red;
+}
+.flashss{
+    background-color: green;
+}
